@@ -1,0 +1,135 @@
+/* outfit-300 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/outfit-v6-latin-300.woff2") format("woff2"), url("../fonts/outfit-v6-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("../fonts/outfit-v6-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/outfit-v6-latin-600.woff2") format("woff2"), url("../fonts/outfit-v6-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #0d192c;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__card {
+  width: 100%;
+  max-width: 350px;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+  position: relative;
+}
+.main__img {
+  margin-bottom: 2.4rem;
+  position: relative;
+  display: block;
+}
+.main .img-hover {
+  position: absolute;
+  top: 2.4rem;
+  width: 305px;
+  height: 305px;
+  background-color: #00fff8;
+  border-radius: 15px;
+  background-image: url("../../images/eye-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.main .img-hover:hover {
+  opacity: 0.7;
+}
+.main__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 1.6rem;
+}
+.main__descr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  /* Soft Blue */
+  color: #8bacd9;
+  margin-bottom: 2.5rem;
+}
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.main__subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  color: #00fff8;
+  gap: 7px;
+}
+.main__date {
+  gap: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  /* Soft Blue */
+  color: #8bacd9;
+}
+.main hr {
+  color: #2e405a;
+  border-color: #2e405a;
+  margin-bottom: 2.4rem;
+}
+.main .creator {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.main .creator__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* Soft Blue */
+  color: #ffffff;
+}
+.main .creator__name .white-text {
+  color: #8bacd9;
+}/*# sourceMappingURL=main.css.map */

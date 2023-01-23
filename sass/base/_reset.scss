@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-color: #0d192c;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

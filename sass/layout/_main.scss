@@ -1,0 +1,99 @@
+.main {
+  &__card {
+    width: 100%;
+    max-width: 350px;
+    background: #15263f;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+    position: relative;
+  }
+  &__img {
+    margin-bottom: 2.4rem;
+    position: relative;
+    display: block;
+  }
+  .img-hover {
+    position: absolute;
+    top: 2.4rem;
+    width: 305px;
+    height: 305px;
+    background-color: #00fff8;
+    border-radius: 15px;
+    background-image: url("../../images/eye-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .img-hover:hover {
+    opacity: 0.7;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 1.6rem;
+  }
+  &__descr {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+
+    /* Soft Blue */
+
+    color: #8bacd9;
+    margin-bottom: 2.5rem;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    color: #00fff8;
+    gap: 7px;
+  }
+  &__date {
+    gap: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+
+    /* Soft Blue */
+
+    color: #8bacd9;
+  }
+  hr {
+    color: #2e405a;
+    border-color: #2e405a;
+    margin-bottom: 2.4rem;
+  }
+  .creator {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    &__name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+
+      /* Soft Blue */
+
+      color: #ffffff;
+      .white-text {
+        color: #8bacd9;
+      }
+    }
+  }
+}
